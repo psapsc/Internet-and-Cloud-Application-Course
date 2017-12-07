@@ -14,3 +14,73 @@ a {
 	cursor: pointer;
 	cursor: hand;
 }
+
+#wrapper {
+	padding-left:225px;
+}
+
+#header {
+	width: 100%;
+	background-color: #333;
+}
+
+#header-wrapper {
+	height: 70px;
+	padding: 10px;
+}
+
+#header-logo {
+	height: 100%;
+	width: 50px;
+	float: left;
+}
+
+#header-user {
+	height: 100%;
+	float: right;
+}
+
+.header-box {
+	height:100%;
+	display: block;
+	float: right;
+	vertical-align: middle;
+	line-height: 50px;
+	text-align: center;
+	padding: 0 20px;
+	color: #eee;
+}
+
+.side-nav {
+	position: fixed;
+	top: 70px;
+	left: 225px;
+	width: 225px;
+	margin-left: -225px;
+	border: none;
+	border-radius: 0;
+	border-top: 1px rgba(0,0,0,.5) solid;
+	overflow-y: auto;
+	background-color: #222;
+	bottom: 0;
+	overflow-x: hidden;
+	padding: 40px 20px;
+}
+
+.side-nav li {
+	width: 100%;
+	border-bottom: 1px solid #333;
+	color: #eee;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	color: #333;
+}
+
+.side-nav li a {
+	color: #eee;
+}
+
+.side-nav li span {
+	float: right;
+}

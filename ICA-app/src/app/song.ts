@@ -4,5 +4,5 @@ export class Song {
 	album: string;
 	artist: string;
 	lyrics: string;
-	release_year: string;
+	release_year: number;
 }

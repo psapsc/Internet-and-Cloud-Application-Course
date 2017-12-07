@@ -1,5 +1,19 @@
-<h2>{{song.title | uppercase}}</h2>
-<div><span>id: </span>{{song.id}}</div>
-<div><span>title: </span>{{song.title}}</div>
-<div><span>album: </span>{{song.album}}</div>
-<div><span>artist: </span>{{song.artist}}</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Album</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of songs" [class.selected]="song === selectedSong" (click)="onSelect(song)" [routerLink]="['/detail/', song.id]">
+        <th scope="row">{{song.id}}</th>
+        <td>{{song.title}}</td>
+        <td>{{song.artist}}</td>
+        <td>{{song.album}}</td>
+    </tr>
+  </tbody>
+</table>
